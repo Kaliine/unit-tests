@@ -3,6 +3,10 @@ const months = [
   'July', 'August', 'September', 'October', 'November', 'December'
 ]
 
-export const monthName = (monthNumber) => {
-  return months[monthNumber]
+export const monthName = (monthsNum) => {
+  if (monthsNum >= 1 && monthsNum <= 12) {
+    return months[monthsNum -1]
+  } else{
+    return null
+  }
 }
